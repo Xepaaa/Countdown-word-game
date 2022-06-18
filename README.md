@@ -32,6 +32,6 @@ print(convert(s))
 
 4 - Lastly, players can enter any combination of letters that appear in their chosen_list and their isnt a check in place to ensure that their submission is actually a word.
 Obviously its impossible to hold a dictionary of words in place to compare the word against but if it were possible to match the submission against words on the web there
-is a possibility for a check. Potentially learning about webscraping will allow me the nessacary skills to refine this code.
+is a possibility for a check. Potentially learning about webscraping will allow me the necessary skills to refine this code.
 
 All in all, this was a fun little project from which i learned alot :D
