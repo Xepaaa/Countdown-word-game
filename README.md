@@ -47,22 +47,22 @@ This game has been improved massively, hence this edit to explain what was chang
 
 Below is a list of all the improvements that have been made to the game:
 
-- User submitted word validation
+- User submitted word validation;
 So, the main reason i revisited this project was after coming across a package known as english-words. This package "Contains sets of English words from svnweb.freebsd.org/csrg/share/dict/. This is up to date with revision 61569 of their words list", given the fact that this is a word game in which players have to form words... this proved to be vital for realistic gameplay. I made it a conditional requirement for the word input to be within a set of aforementioned package - this is by far the best improvement for the game.
 
-- Proper letters to list checks
+- Proper letters to list checks;
 Another major issue in the game was that the user could not enter the same letter twice, this was because due to the use of the set().intersection() method. I accommodated for this flaw by challenging the user to not use the same letter twice, however, this was not how the game was intended to be played. I now have a solid validation function in place that checks the word entered against the letter in the list.
 
-- Word vs word check
+- Word vs word check;
 Although this is a minor improvement, its essential for flawless gameplay. Words entered are checked against the words already accumulated to ensure a unique word is entered each time.
 
-- Final words presentation list
+- Final words presentation list;
 The way in which all the words input by the user are presented at the end of the game was not appealing at all (list, within a list), i have changed it so that the words appear as strings in a neat format using the .join() method.
 
-- To shuffle or play?
+- To shuffle or play?;
 A function which asks the player whether they would like to enter a word, or first shuffle the list has been implemented. This function was challenging to get right at first as i kept receiving "None" as its return value. I fixed this error by passing two arguments of the same list of letters into the shuffle or play function, this allowed me to return two different values to be used in the main code. The shuffled list is retained until shuffled again.
 
-- Ready up & list of cheers and jeers (not harsh)
+- Ready up & list of cheers and jeers (not harsh);
 With respect to a couple of minor improvements, i added a function to initially ask the player if they are ready. Moreover, upon getting a word correct or incorrect there is a message picked from a list consisting of positive and negative feedback, respectively.
 
 
